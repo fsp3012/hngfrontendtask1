@@ -20,7 +20,7 @@ function updateCurrentDay() {
 // Function to update the current UTC time
 function updateCurrentTime() {
   const currentDate = new Date();
-  const utcTime = currentDate.toISOString().slice(11,23);
+  const utcTime = currentDate.toISOString().slice(20);
   const currentUTCTimeElement = document.querySelector(
     '[data-testid="currentUTCTime"]'
   );
